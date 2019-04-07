@@ -1,3 +1,5 @@
+
+
     var  m2_checker1 = 0;
     var  m2_checker2 = 0;
     var  m2_checker3 = 0;
@@ -45,17 +47,10 @@
     }
 
 
-function m2_turnoff(){
 
-    if( m2_checker1 != 1 && m2_checker2 != 1 && m2_checker3 != 1 && m2_checker4 != 1 && m2_checker5 != 1){
-        document.getElementById("m2_c1").style.color = "#808080";
-        document.getElementById("m2_c2").style.color = "#808080";
-        document.getElementById("m2_c3").style.color = "#808080";
-        document.getElementById("m2_c4").style.color = "#808080";
-        document.getElementById("m2_c5").style.color = "#808080";
-    }
 
-    }
+
+    
 
     function m2_slecting(m2_input_number){
 
@@ -68,6 +63,10 @@ function m2_turnoff(){
         document.getElementById("m2_c4").style.color = "#808080";
         document.getElementById("m2_c5").style.color = "#808080";
         m2_checker1 = 1;
+        m2_checker2 = 0;
+        m2_checker3 = 0;
+        m2_checker4 = 0;
+        m2_checker5 = 0;
         }
         
         else if(m2_y=="12"){
@@ -76,7 +75,11 @@ function m2_turnoff(){
         document.getElementById("m2_c3").style.color = "#808080";
         document.getElementById("m2_c4").style.color = "#808080";
         document.getElementById("m2_c5").style.color = "#808080";
+        m2_checker1 = 1;
         m2_checker2 = 1;
+        m2_checker3 = 0;
+        m2_checker4 = 0;
+        m2_checker5 = 0;
         }
         
         else if(m2_y=="123"){
@@ -85,7 +88,11 @@ function m2_turnoff(){
         document.getElementById("m2_c3").style.color = "orange";
         document.getElementById("m2_c4").style.color = "#808080";
         document.getElementById("m2_c5").style.color = "#808080";
-         m2_checker3 = 1;
+        m2_checker1 = 1;
+        m2_checker2 = 1;
+        m2_checker3 = 1;
+        m2_checker4 = 0;
+        m2_checker5 = 0;
         }
 
         else if(m2_y=="1234"){
@@ -94,7 +101,11 @@ function m2_turnoff(){
         document.getElementById("m2_c3").style.color = "orange";
         document.getElementById("m2_c4").style.color = "orange";
         document.getElementById("m2_c5").style.color = "#808080";
-         m2_checker4 = 1;
+        m2_checker1 = 1;
+        m2_checker2 = 1;
+        m2_checker3 = 1;
+        m2_checker4 = 1;
+        m2_checker5 = 0;
         }
 
         else if(m2_y=="12345"){
@@ -103,11 +114,64 @@ function m2_turnoff(){
         document.getElementById("m2_c3").style.color = "orange";
         document.getElementById("m2_c4").style.color = "orange";
         document.getElementById("m2_c5").style.color = "orange";
-         m2_checker5 = 1;
+        m2_checker1 = 1;
+        m2_checker2 = 1;
+        m2_checker3 = 1;
+        m2_checker4 = 1;
+        m2_checker5 = 1;
         }
 
     }
 
 
 
+function m2_turnoff(){
 
+    if( m2_checker1 != "1" && m2_checker2 != "1" && m2_checker3 != "1" && m2_checker4 != "1" && m2_checker5 != "1"){
+        document.getElementById("m2_c1").style.color = "#808080";
+        document.getElementById("m2_c2").style.color = "#808080";
+        document.getElementById("m2_c3").style.color = "#808080";
+        document.getElementById("m2_c4").style.color = "#808080";
+        document.getElementById("m2_c5").style.color = "#808080";
+    }
+
+    if( m2_checker1 == "1" && m2_checker2 != "1" && m2_checker3 != "1" && m2_checker4 != "1" && m2_checker5 != "1"){
+        document.getElementById("m2_c1").style.color = "orange";
+        document.getElementById("m2_c2").style.color = "#808080";
+        document.getElementById("m2_c3").style.color = "#808080";
+        document.getElementById("m2_c4").style.color = "#808080";
+        document.getElementById("m2_c5").style.color = "#808080";
+    }
+
+    if( m2_checker1 == "1" && m2_checker2 == "1" && m2_checker3 != "1" && m2_checker4 != "1" && m2_checker5 != "1"){
+        document.getElementById("m2_c1").style.color = "orange";
+        document.getElementById("m2_c2").style.color = "orange";
+        document.getElementById("m2_c3").style.color = "#808080";
+        document.getElementById("m2_c4").style.color = "#808080";
+        document.getElementById("m2_c5").style.color = "#808080";
+    }
+
+    if( m2_checker1 == "1" && m2_checker2 == "1" && m2_checker3 == "1" && m2_checker4 != "1" && m2_checker5 != "1"){
+        document.getElementById("m2_c1").style.color = "orange";
+        document.getElementById("m2_c2").style.color = "orange";
+        document.getElementById("m2_c3").style.color = "orange";
+        document.getElementById("m2_c4").style.color = "#808080";
+        document.getElementById("m2_c5").style.color = "#808080";
+    }
+
+    if( m2_checker1 == "1" && m2_checker2 == "1" && m2_checker3 == "1" && m2_checker4 == "1" && m2_checker5 != "1"){
+        document.getElementById("m2_c1").style.color = "orange";
+        document.getElementById("m2_c2").style.color = "orange";
+        document.getElementById("m2_c3").style.color = "orange";
+        document.getElementById("m2_c4").style.color = "orange";
+        document.getElementById("m2_c5").style.color = "#808080";
+    }
+
+    if( m2_checker1 == "1" && m2_checker2 == "1" && m2_checker3 == "1" && m2_checker4 == "1" && m2_checker5 == "1"){
+        document.getElementById("m2_c1").style.color = "orange";
+        document.getElementById("m2_c2").style.color = "orange";
+        document.getElementById("m2_c3").style.color = "orange";
+        document.getElementById("m2_c4").style.color = "orange";1
+        document.getElementById("m2_c5").style.color = "orange";
+    }
+}
