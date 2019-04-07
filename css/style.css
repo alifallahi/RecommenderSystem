@@ -1,0 +1,138 @@
+@font-face{font-family:IranianSans;src:url(../fonts/IranianSans.eot);src:url(../fonts/IranianSans.woff);src:url(../fonts/IranianSans.ttf);}
+
+
+*{
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+p{
+direction:rtl;
+text-align:right;
+padding:5px;
+font-family:IranianSans !important;
+font-size: 11pt;
+color:#000000;
+}
+
+
+.return_text{
+font-family:IranianSans !important;
+font-size: 11pt;
+color:#000000;
+}
+
+
+.return_btn, #submit_btn{
+    background-color: #005e8d;
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: IranianSans !important;
+}
+
+
+.movie{
+	padding-top: 5px;
+	width: 180px;
+	height: 250px;
+	display: inline-block;
+	margin: 5px 2px;
+
+	text-align: center;
+}
+
+.poster{
+	width: 130px;
+	height: 200px;
+	margin-bottom: 3px;
+}
+
+
+
+/* The container */
+.container {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  color: #808080;
+
+}
+
+
+
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+body{
+	 color: #7f888f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11pt;
+    background: #f5f6f7;
+
+}
+
+#main_area{
+  margin-top:15px;
+  width:85%;
+  background: #ffffff;
+}
