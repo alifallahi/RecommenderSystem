@@ -5,9 +5,11 @@ Phase1:
 I used HTML, CSS, JavaScript, PHP, MySQL to make a .html page for data gathering and another .php page for inserting data to a mysql database.
 It is accessible  from this link:
 http://rabin.freehost.io/
+https://github.com/alifallahi/RecommenderSystem/tree/Phase1_DataGathering
 
 Phase2:
 I used Python to create a recommender systems from 69 submitted data 
+https://github.com/alifallahi/RecommenderSystem/tree/Phase2_Prediction
 
 Phase 3:
 I'm going to complete it.
